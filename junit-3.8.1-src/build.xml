@@ -4,7 +4,7 @@
 	<property name="build.compiler" value="classic" />
 	<property name="version" value="3.8.1" />
 	<property name="dist"  value="junit${version}" />
-	<property name="versionfile"  value="junit/runner/Version.java" />
+	<property name="versionfile"  value="src/junit/runner/Version.java" />
 	<property name="zipfile"  value="${dist}.zip" />
 	<target name="init">
 		<tstamp/>
@@ -42,10 +42,10 @@
 			excludes="**/*.jar, junit/tests/**, junit/samples/**, **/*.java, doc/**, README.html,  build.xml, jar-manifest.txt, .classpath, .project, cpl-v10.html"
 		/>
 		<copy todir="${dist}/junit/samples">
-			<fileset dir="junit/samples" />
+			<fileset dir="src/junit/samples" />
 		</copy>
 		<copy todir="${dist}/junit/tests">
-			<fileset dir="junit/tests" />
+			<fileset dir="src/junit/tests" />
 		</copy>
 
 
