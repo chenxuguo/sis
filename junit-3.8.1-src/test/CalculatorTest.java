@@ -7,6 +7,9 @@ import junit.framework.TestCase;
  * @author xiang.wei
  */
 public class CalculatorTest  extends TestCase {
+    public void testFail(){
+        fail("失败测试");
+    }
     public void testAdd()
     {
         Calculator calculator = new Calculator();
