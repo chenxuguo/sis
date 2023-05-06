@@ -3,6 +3,7 @@
  *
  * @author xiang.wei
  */
+package sis.studentinfo;
 public class Calculator {
     public int add(int a, int b) {
         return a + b;
